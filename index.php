@@ -22,22 +22,10 @@
             body { height: 100%; margin: 0; padding: 0;}
             #map { height: 100% }
         </style>
-	<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
-	<script src="http://cdn.jsdelivr.net/g/filesaver.js"></script>
 	</head>
 	
 	<body>
-	<script>
-		function SaveAsFile(t,f,m) {
-        		try {
-                		var b = new Blob([t],{type:m});
-                		saveAs(b, f);
-        		} catch (e) {
-        			window.open("data:"+m+"," + encodeURIComponent(t), '_blank','');
-        		}
-        	}
-	</script>
-		
+	
 		<div id="map"></div>
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 		<script type="text/javascript">
